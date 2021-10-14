@@ -26,7 +26,11 @@ const restaurantSchema = new mongoose.Schema({
     },
 
 
-});
+},
+{
+    timestamps:true,  // createdAt And updatedAt
+},
+);
 
 
 

@@ -6,6 +6,10 @@ const userSchema = new mongoose.Schema({
     password:{type: String},
     address:[{detail: {type: String}, for: {type: String}} ],
     phoneNumber:[{type: Number}],
-});
+},
+{
+    timestamps:true,  // createdAt And updatedAt
+},
+);
 
-export const userModel = mongoose.model("Users", userSchema);
+export const UserModel = mongoose.model("Users", userSchema);
